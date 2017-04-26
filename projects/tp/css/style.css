@@ -1,0 +1,54 @@
+﻿html, body {
+   background-color: #272b30; 
+}
+
+p, blockquote {
+	color: #c8c8c8;
+}
+
+blockquote footer {
+	color: white;
+}
+
+h1, h5 {
+    padding-left: 10px;
+	color: #c8c8c8;
+}
+
+.panel, .well {
+    margin-top: 15px;
+	background-color: #1c1e22;
+	border: 1px solid #0c0d0e;
+	color: #c8c8c8;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: gray;
+    color: white;
+}
+
+.panel-footer {
+    background-color: gray;
+}
+
+.container-fluid {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+table {
+    margin: 20px 0 10px 0;
+}
+
+.main-picture {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 2em;
+	color: white;
+}

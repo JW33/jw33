@@ -1,0 +1,21 @@
+h2 {
+	text-align: center;
+	color: white;
+}
+
+h4 {
+	margin-left: .5em;
+	color: white;
+}
+
+html, body, table {
+	background-color: black;
+}
+
+table {
+	color: white;
+}
+
+td {
+	color: black;
+}

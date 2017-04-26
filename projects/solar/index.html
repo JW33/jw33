@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+
+    <title>Solar Calculator</title>
+	<meta name="description" content="Solar Calculator">
+    <meta name="author" content="JW33">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Best Solar</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Calculator</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Clients</a></li>
+        </ul>
+        <div class="keepOpen"></div>
+    </nav>
+    <main>
+        <h1>Calculator</h1>
+        <form name="solarForm" action="" method="post">
+            <fieldset id="mpc">
+                <legend>Monthly Power Consumption</legend>
+                <p>In order to accuratly calculate your solar needs, we need to know how much power you use. Please enter the last 12 months of electrical usage (in kWh) below.</p>
+				<div id="wrapper">
+				<div class="pure-g">
+					<div class="pure-u-1-4">
+						<label><span>January</span></label><input name="jan" type="number" value="1028">
+					</div>
+        			<div class="pure-u-1-4">
+						<label><span>February</span></label><input name="jan" type="number" value="760">
+					</div>
+        			<div class="pure-u-1-4">
+						<label><span>March</span></label><input name="jan" type="number" value="762">
+					</div>
+				</div>
+
+				<div class="pure-g">
+					<div class="pure-u-1-4">
+						<label><span>April</span></label></label><input name="jan" type="number" value="766">
+					</div>
+        			<div class="pure-u-1-4">
+						<label><span>May</span></label><input name="jan" type="number" value="579">
+					</div>
+        			<div class="pure-u-1-4">
+						<label><span>June</span></label><input name="jan" type="number" value="695">
+					</div>
+				</div>
+
+				<div class="pure-g">
+					<div class="pure-u-1-4">
+						<label><span>July</span></label><input name="jan" type="number" value="1015">
+					</div>
+        			<div class="pure-u-1-4">
+						<label><span>August</span></label><input name="jan" type="number" value="1216">
+					</div>
+        			<div class="pure-u-1-4">
+						<label><span>September</span></label><input name="jan" type="number" value="1033">
+					</div>
+				</div>
+
+				<div class="pure-g">
+					<div class="pure-u-1-4">
+						<label><span>October</span></label><input name="jan" type="number" value="769">
+					</div>
+        			<div class="pure-u-1-4">
+						<label><span>November</span></label><input name="jan" type="number" value="326">
+					</div>
+        			<div class="pure-u-1-4">
+						<label><span>December</span></label><input name="jan" type="number" value="682">
+					</div>
+				</div>
+			</div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sunshine Zone</legend>
+                <figure><img src="images/US-Solar-Zone-Map.jpg" alt="zone map"></figure>
+                <p>Please use this map to determine which zone you are in.</p>
+                <select name="zone">
+                    <option>Zone 1</option>
+                    <option>Zone 2</option>
+                    <option>Zone 3</option>
+                    <option>Zone 4</option>
+                    <option>Zone 5</option>
+                    <option>Zone 6</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Panel Choice</legend>
+
+                <p>Please select a solar panel you would like to use.</p>
+                <select name="panel">
+					<!-- value stands for Watts per hours generated -->
+                    <option value="250">Axitec AC-250P/156-60S </option>
+                    <option value="275">Canadian Solar CS6K-275M </option>
+                    <option value="260">Hanwha Q.Pro BFR-G4.260 </option>
+                </select>
+            </fieldset>
+
+        </form>
+
+        <button onclick="calculateSolar();">Calculate Solar Needs</button>
+        <h2>Solar Reccomendation</h2>
+        <div id="feedback">
+            <p>Enter your information above to calculate your solar needs.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Jeremy Wohltman; Sample Project - Solar Calculator</p>
+    </footer>
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
